@@ -20,15 +20,11 @@
     <h1>Impact Test</h1>
 
     <script type="text/javascript">
-      function part1(){
-        var pageURL = window.location.href;
-        var key1;
-        var key2;
-        //https://thisisjanelles.github.io/impact-test/?key1=name&key2=name@email.com
-        var split = pageURL.split("/");
-        return split;
-      };
-      part1();
+      function key1(){
+        return document.location.search.split('?')[1];
     </script>
+
+    <p>Key 1 = </p>
+    <p>Key 2 = </p>
   </body>
 </html>
